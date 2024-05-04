@@ -15,11 +15,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -45,7 +46,7 @@
       <footer>
         This project was coded by
         <a href="https://github.com/opease" target="_blank"> Odille Pease </a>
-        code hosted on
+        open-sourced on
         <a href="https://github.com/opease/Weer" target="_blank">GitHub </a>
         and website hosted on
         <a href="https://weer-shecodes-app.netlify.app" target="_blank">
@@ -53,5 +54,6 @@
         </a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
